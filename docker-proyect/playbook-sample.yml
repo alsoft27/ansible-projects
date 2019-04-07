@@ -1,0 +1,6 @@
+#sample playbook
+-
+  name: play1
+  hosts: target1
+  roles:
+    - geerlingguy.docker

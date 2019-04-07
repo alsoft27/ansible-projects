@@ -1,0 +1,2 @@
+target1 ansible_host=192.168.1.108 ansible_ssh_user=alsoft27 ansible_ssh_pass=alsoft27
+target2 ansible_host=192.168.1.107 ansible_ssh_user=alsoft27 ansible_ssh_pass=alsoft27

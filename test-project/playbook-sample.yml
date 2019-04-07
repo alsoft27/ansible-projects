@@ -1,0 +1,7 @@
+#sample playbook
+-
+  name: play1
+  hosts: target1
+  tasks:
+    - name: Execute command ping
+      ping:
