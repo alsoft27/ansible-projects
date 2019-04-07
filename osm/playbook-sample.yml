@@ -1,0 +1,15 @@
+#sample playbook
+-
+  name: play1
+  hosts: target1
+  tasks:
+    - name: Create osm folder
+      command: mkdir /osm creates=/osm
+    - name: Copy a docker-compose.yaml file on the remote machine for prepare osm server tiles
+      copy:
+          src: docker-compose.yaml
+          dest: /osm/docker-compose.yaml
+    - name: Download foo.conf
+      get_url:
+        url: http://download.geofabrik.de/central-america/cuba-latest.osm.pbf
+        dest: /osm/cuba-latest.osm.pbf
